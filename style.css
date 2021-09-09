@@ -1,0 +1,46 @@
+/* Original styles - don't edit these! */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .bg1 {
+    background: url(bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .bg2 {
+    background: url(bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* Add your styles below here*/
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(10, 300px) ;
+    grid-gap: 0.5em
+  }
+  .bg1, .bg2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+  }
+  body {
+    background-color:rgb(80, 80, 80) ;
+  }
+  .bg1 *, .bg2 * {
+    text-align: center;
+    margin-bottom: 5px;
+    color:#eee;
+    background-color: rgba(0, 0, 0, 0.637);
+    padding: 10px;
+   }
+   .bg1:hover, .bg2:hover{
+     border: 1px solid white;
+   }
